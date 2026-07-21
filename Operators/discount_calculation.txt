@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+
+ float item1 = sc.nextFloat();
+ float item2 = sc.nextFloat();
+ float discount = sc.nextFloat();
+
+ double total_amount = item1+item2;
+ double amount_saved =
+((total_amount*discount)/100);
+ double discounted = total_amount -
+amount_saved;
+
+ System.out.printf("%.2f",total_amount);
+ System.out.printf("\n%.2f",discounted);
+ System.out.printf("\n%.2f",amount_saved);
+}
+}

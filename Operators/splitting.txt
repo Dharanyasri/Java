@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int students = sc.nextInt();
+ int team = sc.nextInt();
+ int value = students/team;
+ int value1 = students%team;
+ System.out.println(value);
+ System.out.println(value1);
+ }
+}

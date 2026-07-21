@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int X = sc.nextInt();
+ int Y = sc.nextInt();
+ int R = sc.nextInt();
+ double PA = (X*R*Y)/100;
+ double amount = (X+PA);
+ double discount = (PA*2)/100;
+ double f = amount-discount;
+ System.out.printf("\n%.2f",PA);
+ System.out.printf("\n%.2f",amount);
+ System.out.printf("\n%.2f",discount);
+ System.out.printf("\n%.2f",f);
+}
+}

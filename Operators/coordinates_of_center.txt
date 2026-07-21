@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int X = sc.nextInt();
+ int Y = sc.nextInt();
+ int side = sc.nextInt();
+ int value_1 = X+side/2;
+ int value_2 = Y+side/2;
+ System.out.println(value_1);
+ System.out.println(value_2);
+ }
+}
