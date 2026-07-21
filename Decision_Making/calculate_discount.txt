@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int amount = sc.nextInt();
+ int choice = sc.nextInt();
+ double d = 0;
+
+ switch(choice){
+ case 1:
+ d = 20;
+ break;
+ case 3:
+ case 4:
+ d = 10;
+ break;
+ case 6:
+ case 7:
+ d = 75;
+ break;
+ case 10:
+ case 11:
+ d = 30;
+ break;
+ case 12:
+ d = 35;
+ break;
+ default:
+ d = 0;
+ }
+
+ double f = amount-(amount*d/100);
+ System.out.printf("Zack's father needs to pay
+Rs.%.2f.",f);
+ }
+}

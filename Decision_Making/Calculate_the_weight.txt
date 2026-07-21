@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int weightboat = sc.nextInt();
+ int adults = sc.nextInt();
+ int children = sc.nextInt();
+ int totalweight = (adults*75)+(children*50);
+ if(weightboat>totalweight){
+ System.out.println("Boat is stable");
+ }
+ else{
+ System.out.println("Boat will drown");
+ }
+}
+}

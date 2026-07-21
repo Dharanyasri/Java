@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int A = sc.nextInt();
+ int B = sc.nextInt();
+ int C = sc.nextInt();
+ int speed = sc.nextInt();
+ if (A<B && A<C && A != 0){
+ System.out.println("Bike 1 goes into road
+A");
+ }
+ else if(B<C){
+ System.out.println("Bike 1 goes into road
+B");
+ }
+ else if(C<B){
+ System.out.println("Bike 1 goes into road
+C");
+ }
+ else{
+ System.out.println("No path exist");
+ }
+ }
+}

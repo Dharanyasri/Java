@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int flp_price = sc.nextInt();
+ int flp_discount = sc.nextInt();
+ int flp_shipping = sc.nextInt();
+
+ int snp_price = sc.nextInt();
+ int snp_discount = sc.nextInt();
+ int snp_shipping = sc.nextInt();
+
+ int amz_price = sc.nextInt();
+ int amz_discount = sc.nextInt();
+ int amz_shipping = sc.nextInt();
+
+ int flipkart = flp_price-
+(flp_price*flp_discount/100)+flp_shipping;
+ int snapdeal = snp_price-
+(snp_price*snp_discount/100)+snp_shipping;
+ int amazon = amz_price-
+(amz_price*amz_discount/100)+amz_shipping;
+
+ if(flipkart<snapdeal && flipkart<amazon){
+ System.out.println("In Flipkart
+Rs."+flipkart);
+ System.out.println("In Snapdeal
+Rs."+snapdeal);
+ System.out.println("In Amazon Rs."+amazon);
+ System.out.println("He will prefer
+Flipkart");
+ }
+ else if(snapdeal<amazon){
+ System.out.println("In Flipkart
+Rs."+flipkart);
+ System.out.println("In Snapdeal
+Rs."+snapdeal);
+ System.out.println("In Amazon Rs."+amazon);
+ System.out.println("He will prefer
+Snapdeal");
+ }
+ else{
+ System.out.println("In Flipkart
+Rs."+flipkart);
+ System.out.println("In Snapdeal
+Rs."+snapdeal);
+ System.out.println("In Amazon Rs."+amazon);
+ System.out.println("He will prefer
+Amazon");
+}
+}
+}

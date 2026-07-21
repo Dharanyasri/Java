@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int n = sc.nextInt();
+
+ if(n<=200){
+ System.out.println("Rs."
++Math.round(n*0.5));
+ }
+ else if(n<=400){
+ System.out.println("Rs."
++Math.round(n*0.65+100));
+ }
+ else if(n<=600){
+ System.out.println("Rs."
++Math.round(n*0.80+200));
+ }
+ else{
+ System.out.println("Rs."
++Math.round(n*1.25+425));
+ }
+ }
+}

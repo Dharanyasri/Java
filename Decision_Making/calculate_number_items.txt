@@ -1,0 +1,27 @@
+import java.util.Scanner;
+ public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+
+ String item = sc.nextLine();
+ int stock = sc.nextInt();
+ int amount = sc.nextInt();
+ int buy = sc.nextInt();
+
+ if(stock==0){
+ System.out.println("Out of stock");
+ }
+ else if(buy>stock){
+ System.out.println("only"+stock+"
+"+item+"are available");
+ }
+ else{
+ int price = buy*amount;
+ int remaining = stock - buy;
+ System.out.println("Amount for " +buy+ "
+" +item+ " is " +price);
+ System.out.println("Remaining number of
+"+item+ " present in stock is "+remaining);
+ }
+ }
+}

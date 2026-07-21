@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ int salary = sc.nextInt();
+ int hostel = sc.nextInt();
+ int food = sc.nextInt();
+ int loan = sc.nextInt();
+ int other = sc.nextInt();
+
+ int total_expense = hostel+food+loan+other;
+
+ if(salary>total_expense){
+ System.out.println("He can save the
+money");
+ }
+ else if(salary<total_expense){
+ System.out.println("He wants to work
+hard");
+ }
+ else{
+ System.out.println("His salary will be able
+to manage");
+ }
+ }
+}
