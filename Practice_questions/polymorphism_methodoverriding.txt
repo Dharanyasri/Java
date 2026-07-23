@@ -1,0 +1,16 @@
+class First{
+    public void hi(){
+        System.out.println("Hi in first");
+    }
+}
+class Second extends First{
+    public void hi(){
+        System.out.println("Hi in second");
+    }
+}
+    public class Main{
+   public static void main(String args[]){
+        Second s=new Second();
+        s.hi();
+    }
+}

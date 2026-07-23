@@ -1,0 +1,22 @@
+interface Parent{
+    void house();
+}
+interface Mother{
+    void money();
+}
+
+class son implements Parent,Mother{
+    public void house(){
+        System.out.println("Welcome Home");
+    }
+    public void money(){
+        System.out.println("$$$$$$");
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        son s=new son();
+        s.house();
+        s.money();
+    }
+}

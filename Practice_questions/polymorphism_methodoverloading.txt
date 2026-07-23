@@ -1,0 +1,16 @@
+public class Main{
+    public static void learn(){
+        System.out.println("Learning");
+    }
+    public static void learn(int a){
+        System.out.println(a);
+    }
+    public static void learn(String a){
+        System.out.println(a);
+    }
+    public static void main(String args[]){
+        learn();
+        learn(5);
+        learn("hello world");
+    }
+}

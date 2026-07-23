@@ -1,0 +1,14 @@
+public class Main
+{
+    int a=5;
+    Main(int a){
+        System.out.println("Parameter:" +a);
+        System.out.println("Global:"+a);
+    }
+	public static void main(String[] args) {
+	    Main m=new Main(5);
+	   
+		
+	
+}
+}

@@ -1,0 +1,20 @@
+abstract class Car{
+    abstract void engine();
+    
+    void drive(){
+        System.out.println("Driving");
+    }
+}
+class Engine extends Car{
+    void engine(){
+        System.out.println("450CC");
+    }
+    
+}
+public class Main{
+    public static void main(String args[]){
+        Engine e=new Engine();
+        e.drive();
+        e.engine();
+}
+}

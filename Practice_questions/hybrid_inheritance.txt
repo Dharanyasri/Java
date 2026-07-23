@@ -1,0 +1,36 @@
+class Parent{
+    public void hi(){
+        System.out.println("hello");
+    }
+}
+class Telephone extends Parent{
+    public void call(){
+        System.out.println("Ring Ring");
+    }
+}
+class Phone extends Telephone {//inheritance
+    public void camera(){
+        System.out.println("Selfie");
+    }
+}
+class SmartPhone extends Telephone {//inheritance
+    public void game(){
+        System.out.println("Subway Surfers");
+    }
+}
+public class Main{
+	public static void main(String[] args) {
+	    
+	    Parent r =new Parent();
+	    r.hi();
+	   
+	    Phone p = new Phone();
+	    p.call();
+	    p.camera();
+	    SmartPhone sp=new SmartPhone();
+	    sp.call();
+	    sp.game();
+	    
+	
+}
+}

@@ -1,0 +1,24 @@
+class Telephone{
+    public void call(){
+        System.out.println("Ring Ring");
+    }
+}
+class Phone extends Telephone {//inheritance
+    public void camera(){
+        System.out.println("Selfie");
+    }
+}
+class SmartPhone extends Phone {//inheritance
+    public void game(){
+        System.out.println("Subway Surfers");
+    }
+}
+public class Main{
+	public static void main(String[] args) {
+	    SmartPhone p=new SmartPhone();
+	    p.call();
+	    p.camera();
+	    p.game();
+	
+}
+}

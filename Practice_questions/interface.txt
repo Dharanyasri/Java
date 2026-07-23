@@ -1,0 +1,24 @@
+interface home{
+    void Kitchen();
+    void Hall();
+    void Bedroom();
+}
+class Afra implements home{
+    public void Kitchen(){
+        System.out.println("Biriyani");
+    }
+    public void Hall(){
+        System.out.println("Eat Biriyani");
+    }
+    public void Bedroom(){
+        System.out.println("Zzzzzzzz");
+    } 
+}
+public class Main{
+    public static void main(String args[]){
+        Afra a = new Afra();
+        a.Kitchen();
+        a.Hall();
+        a.Bedroom();
+    }
+}

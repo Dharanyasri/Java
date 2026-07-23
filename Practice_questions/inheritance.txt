@@ -1,0 +1,18 @@
+class Telephone{
+    public void call(){
+        System.out.println("Ring Ring");
+    }
+}
+class Phone extends Telephone {//inheritance
+    public void camera(){
+        System.out.println("Selfie");
+    }
+}
+public class Main{
+	public static void main(String[] args) {
+	    Phone p=new Phone();
+	    p.call();
+	    p.camera();
+	
+}
+}
