@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String a=sc.nextLine();
+        char ch=a.charAt(0);
+        char ch1=a.charAt(2);
+        
+        for(char c=ch;c<=ch1;c++){
+            System.out.print(c);
+        }
+        
+        
+    }
+}

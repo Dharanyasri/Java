@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value");
+        String a=sc.nextLine();
+        a=a.toLowerCase();
+        int vowel=0;
+        int cons=0;
+        for(int i=0;i<a.length();i++){
+            char ch=a.charAt(i);
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+                vowel++;
+            }
+            else if(ch>='a'&&ch<='z'){
+                cons++;
+            }
+        }
+        System.out.println("Vowel:"+vowel);
+        System.out.println("Consonant:"+cons);
+        
+    }
+}
