@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+class Node {
+	int data;
+	Node next;
+	Node prev;
+
+	Node(int data) { //40
+		this.data=data;
+		this.next=null;
+		this.prev=null;
+	}
+}
+public class Main
+{
+	static Node head=null;
+
+	public static void insert(int data) { //40
+		Node newNode=new Node(data);
+		if(head==null) {
+			head=newNode;
+			return;
+		}
+		else {
+			Node temp=head;//100
+
+			while(temp.next!=null) { //null!=null
+				temp=temp.next;//300
+			}
+
+			temp.next=newNode;
+			newNode.prev=temp;
+
+
+		}
+
+	}
+
+	public static void display() {
+		Node temp=head;//100
+		while(temp!=null) { //null!=null
+			System.out.print(temp.data+" ");//10 20 30 40
+			temp=temp.next;//null
+		}
+	}
+
+public static void displayReverse() {
+           Node temp = head;//100
+
+          
+          while (temp.next != null) {//null!=null
+                temp = temp.next;//300
+           }
+
+           
+            while (temp != null) {//null!=null
+               System.out.print(temp.data + " ");//30 20 10
+            temp = temp.prev;//null
+            }
+}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter number of nodes:");
+		int n=sc.nextInt();//5
+
+		for(int i=0; i<n; i++) { //5<5
+			int data=sc.nextInt();//40
+			if(data>0) { //40>0
+				insert(data);
+			}
+
+
+		}
+
+
+		System.out.print("Forward direction:");
+		display();
+		System.out.println();
+		System.out.print("Backward direction:");
+		displayReverse();
+
+	}
+}
