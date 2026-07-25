@@ -1,0 +1,95 @@
+Deletion at specific position:
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+public class Main {
+
+    static Node head = null;
+
+    // Insert at end
+    public static void insert(int data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+
+        Node temp = head;
+
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = newNode;
+    }
+
+    // Delete at specific position
+    public static void deleteAtPosition(int pos) {//2
+
+        if (head == null) {//100==null
+            System.out.println("List is empty");
+            return;
+        }
+
+        // Delete first node
+        if (pos == 1) {//2==1
+            head = head.next;
+            return;
+        }
+
+        Node temp = head;//100
+
+        // Move to (pos-1)th node
+        for (int i = 1; i < pos - 1 && temp != null; i++) {//1<1
+            temp = temp.next;
+        }
+
+        if (temp == null || temp.next == null) {
+            System.out.println("Invalid Position");
+            return;
+        }
+
+        temp.next = temp.next.next;
+    }
+
+    // Display
+    public static void display() {
+        Node temp = head;
+
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of nodes: ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            int data = sc.nextInt();
+            insert(data);
+        }
+
+        System.out.print("Enter position to delete: ");
+        int pos = sc.nextInt();//2
+
+        deleteAtPosition(pos);
+
+        System.out.println("Linked List:");
+        display();
+    }
+}
