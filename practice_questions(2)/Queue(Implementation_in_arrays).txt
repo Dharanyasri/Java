@@ -1,0 +1,58 @@
+Queue Implementation in arrays:
+import java.util.Scanner;
+
+public class Main {
+
+    static int[] queue;
+    static int front = 0;
+    static int rear = -1;
+
+    // Enqueue
+    public static void enqueue(int data) {//30
+
+        if (rear == queue.length - 1) {//1==4
+            System.out.println("Queue Overflow");
+            return;
+        }
+
+        rear++;//2
+        queue[rear] = data;
+        //queue[0]=10,queue[1]=20,queue[2]=30
+        
+    }
+
+    // Display
+    public static void display() {
+
+        if (rear < front) {
+            System.out.println("Queue is Empty");
+            return;
+        }
+
+        System.out.println("Queue Elements:");
+
+        for (int i = front; i <= rear; i++) {//3<=2
+            System.out.print(queue[i] + " ");//10 20 30
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter queue size: ");
+        int size = sc.nextInt();//5
+
+        queue = new int[size];
+
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();//3
+
+        for (int i = 0; i < n; i++) {//3<3
+            int data = sc.nextInt();//30
+            enqueue(data);
+        }
+
+        display();
+    }
+}
