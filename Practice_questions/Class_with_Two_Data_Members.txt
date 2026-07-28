@@ -1,0 +1,22 @@
+class Car{
+    String Brand;
+    int Price;
+}
+public class Main{
+    public static void main(String[] args){
+        Car c = new Car();
+        Car c1 = new Car();
+        
+        c.Brand = "TOYOTA";
+        c.Price = 1000000;
+        
+        c1.Brand = "HONDA";
+        c1.Price = 5000000;
+        
+        System.out.println("Car 1 Details");
+        System.out.println(c.Brand +" : " +c.Price);
+        
+        System.out.println("Car 2 Details");
+        System.out.println(c1.Brand +" : " +c1.Price);
+    }
+}
