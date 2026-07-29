@@ -1,0 +1,40 @@
+class Student{
+    int id;
+    String name;
+    int mark1;
+    int mark2;
+    int mark3;
+
+    
+    Student(int id,String name,int mark1,int mark2,int mark3){
+        this.id=id;
+        this.name=name;
+        this.mark1=mark1;
+        this.mark2=mark2;
+        this.mark3=mark3;
+    }
+
+    public void display(){
+        System.out.println("ID:"+id);
+        System.out.println("Name:"+name);
+       int total_marks=mark1+mark2+mark3;
+        System.out.println("Total Marks:"+total_marks);
+       int avg_marks=total_marks/3;
+       System.out.println("Average Marks:"+avg_marks );
+    }
+}
+
+public class Main{
+    public static void main(String args[]){
+        Student s = new Student(101,"Janu",89,45,78);
+        Student s1 = new Student(102,"Arjun",78,64,56);
+        Student s2 = new Student(103,"Deva",67,90,34);
+        s.display();
+        System.out.println();
+          s1.display();
+          System.out.println();
+        
+          s2.display();
+        
+    }
+}
