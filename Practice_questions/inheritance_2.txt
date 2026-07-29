@@ -1,0 +1,22 @@
+class Animal{
+    String name;
+    public void setName(String n){
+        name=n;
+    }
+    public void display(){
+        System.out.print(name);
+    }
+}
+class Dog extends Animal{
+    public void bog(){
+    }
+}
+
+public class Main{
+    public static void main(String args[]){
+        Dog d = new Dog();
+        d.setName("Tommy");
+        d.display();
+       
+    }
+}
