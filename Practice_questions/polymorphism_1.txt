@@ -1,0 +1,33 @@
+class Salary{
+    
+    
+    public int calculate(int basic){
+        int c = basic;
+        return c;
+    }
+    
+     public int calculate(int basic,int bonus){
+         int c = basic + bonus;
+         return c;
+     }   
+    
+     public int calculate(int basic, int bonus,int allowance){
+        int c = basic + bonus+allowance;
+         return c;
+    }
+} 
+public class Main{
+    public static void main(String args[]){
+        Salary s = new Salary();
+        int a = s.calculate(677);
+        System.out.println(a);
+        
+        int b = s.calculate(567,345);
+        System.out.println(b);
+        
+         int c = s.calculate(3543,56778,76897);
+        System.out.println(c);
+        
+    }   
+        
+}
