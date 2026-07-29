@@ -1,0 +1,33 @@
+class Person{
+    String name;
+    int age;
+    
+    public void setPerson(String n,int a){
+        name=n;
+        age=a;
+    }
+    public void displayPerson(){
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
+        
+    }
+}
+class Student extends Person{
+    int mark;
+    public void setMark(int m){
+        mark=m;
+    }
+    public void displayStudent(){
+        System.out.println("Mark:"+mark);
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        Student s = new Student();
+        s.setPerson("jana",34);
+         s.setMark(78);
+         s.displayPerson();
+         s.displayStudent();
+        
+    }
+}
