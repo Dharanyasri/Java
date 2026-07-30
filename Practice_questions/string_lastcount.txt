@@ -1,0 +1,11 @@
+import java.util.*;
+    class Main{
+        public static void main(String args[]){
+            Scanner sc = new Scanner(System.in);
+            String a = sc.nextLine();
+            String str[] = a.split(" ");
+            int n = str.length-1;
+            String ans = str[n];
+            System.out.print(ans.length());
+        }
+    }
