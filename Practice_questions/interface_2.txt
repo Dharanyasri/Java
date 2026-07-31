@@ -1,0 +1,27 @@
+interface a {
+    void hi();
+    void hello();
+}
+interface b {
+    void helloo();
+}
+class A implements a,b{
+    public void hi(){
+        System.out.println("Message");
+    }
+    public void hello(){
+        System.out.println("Hi");
+    }
+    public void helloo(){
+        System.out.println("Hello");
+    }
+}
+
+public class Main{
+    public static void main (String[] args) {
+        A c = new A();
+        c.hi();
+        c.hello();
+        c.helloo();
+    }
+}
