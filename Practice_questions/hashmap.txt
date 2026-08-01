@@ -1,0 +1,45 @@
+
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Creating HashMap object
+        HashMap<Integer, String> students = new HashMap<>();
+
+        // put() - Adds key-value pairs
+        students.put(101, "Rahul");
+        students.put(102, "John");
+        students.put(103, "David");
+
+        System.out.println("After put(): " + students);
+
+        // get() - Gets value using key
+        System.out.println("Student 102: " + students.get(102));
+
+        // containsKey()
+        System.out.println("Contains Key 101? " +
+                           students.containsKey(101));
+
+        // containsValue()
+        System.out.println("Contains Rahul? " +
+                           students.containsValue("Rahul"));
+
+        // size()
+        System.out.println("Size: " + students.size());
+
+        // remove()
+        students.remove(103);
+        System.out.println("After remove(): " + students);
+
+        // keySet() - Returns all keys
+        System.out.println("Keys: " + students.keySet());
+
+        // values() - Returns all values
+        System.out.println("Values: " + students.values());
+
+        // clear()
+        students.clear();
+        System.out.println("After clear(): " + students);
+    }
+}
